@@ -1,0 +1,131 @@
+﻿.button-1 {
+    background-color: #EA4C89;
+    border-radius: 20px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    height: 150px;
+    width: 80vw;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border: 10px dashed white;
+}
+
+.button-1:hover,
+.button-1:focus {
+    background-color: #F082AC;
+}
+
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+    border: 7px dotted white;
+    width: 60vw;
+    height: 100px;
+    color: white;
+    background-color: rgb(3, 173, 252);
+    padding: 8px 20px;
+    border-radius: 15px;
+    font-size: 50px;
+}
+
+.btn:hover {
+    background-color: rgb(0, 146, 214);
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 60vw;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scroll-container {
+    overflow: hidden;
+}
+
+.scroll-text {
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+
+    -moz-animation: my-animation 3s linear infinite;
+    -webkit-animation: my-animation 3s linear infinite;
+    animation: my-animation 3s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }

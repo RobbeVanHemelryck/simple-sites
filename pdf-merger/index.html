@@ -1,0 +1,77 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://unpkg.com/pdf-lib"></script>
+    <link rel="stylesheet" href="bg.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div style="text-align: center; font-size: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        
+        <div class="upload-btn-wrapper">
+            <button class="btn">Voorkanten</button>
+            <input type="file" name="myfile" id="upload-front" />
+        </div>
+        <br>
+        
+        <br>
+        <div class="upload-btn-wrapper">
+            <button class="btn">Achterkanten</button>
+            <input type="file" name="myfile" id="upload-back"/>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        
+        <button onclick="merge()" class="button-1 scroll-container" onclick="merge()" role="button">
+            <div class="scroll-text">GO GO GO GO GO</div>
+        </button>
+    </div>
+</body>
+
+<script>
+    function merge(){
+        let front = document.getElementById('upload-front').files[0];
+        let back = document.getElementById('upload-back').files[0];
+        
+        let reader = new FileReader();
+        let docs = [];
+        
+        reader.onload = async function() {
+            let byteArray = new Uint8Array(this.result);
+            let doc = await PDFLib.PDFDocument.load(byteArray);
+            docs.push(doc);
+        }
+
+        reader.onloadend = function() {
+            reader.onloadend = () => processFiles(docs[0], docs[1]);
+            reader.readAsArrayBuffer(back);
+        }
+        reader.readAsArrayBuffer(front);
+    }
+    
+    async function processFiles(front, back){
+        let doc = front;
+        let backIndices = Array(back.getPageCount()).fill().map((x,i) => i);
+        let fronts = await doc.copyPages(back, backIndices);
+        
+        for(let i = 0; i < fronts.length; i++){
+            doc.insertPage(i * 2 + 1, fronts[fronts.length - 1 - i])
+        }
+
+        await download(doc);
+    }
+    async function download(doc) {
+        const bytes = await doc.save();
+        
+        let blob = new Blob([bytes], {type: "application/pdf"});
+        let link = document.createElement('a');
+        link.href = window.URL.createObjectURL(blob);
+        let fileName = "PDF merger " + new Date().toISOString().split('T')[0] + ".pdf";
+        link.download = fileName;
+        link.click();
+    }
+</script>
+</html>
