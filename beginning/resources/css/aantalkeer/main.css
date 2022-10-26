@@ -1,0 +1,220 @@
+.zoeksrc{
+    width: 50vw;
+    height: 15vw;
+    overflow-y: scroll;
+}
+#tezoeken{
+    width: 50vw;
+    height: 8vw;
+}
+gevonden{
+    color: red;
+}
+#groen{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 15vw;
+    z-index: -1;
+}
+#robertoswag{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 20vw;
+    z-index: -1
+}
+#logo{
+    position:absolute;
+    left: 20px;
+    top: 20px;
+    width: 20vw;
+    transition: width 0.3s ease-in-out 0s;
+}
+#logo:hover{
+    width: 22vw;
+}
+body{
+    background-color: #58aefe;
+}
+#wrapper{
+    width: 50vw;
+    height: 300vh;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    background-color: white;
+}
+#wrapper p{
+    margin:0;
+    padding:0;
+    font-family: arial;
+    line-height: 22px;
+    text-align: justify;
+}
+
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+li{
+    margin: 0;
+    padding:0;
+    list-style-type: none;
+}
+.vsmcas{
+    float: left;
+    position: relative;
+
+}
+#projecten, #games{
+    display:block;
+    background-color: #87CFFF;
+    padding: 20px 0px 20px 0px;
+    width: 15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 17px;
+    text-align: center;
+    font-family: arial;
+    font-weight: 600;
+    color: #34768C;
+    transition: background 0.2s linear 0s, color 0.1s linear 0s;
+}
+#school{
+    display:block;
+    background-color: #87CFFF;
+    padding: 30px 0px 30px 0px;
+    width: 15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: center;
+    font-family: arial;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: #34768C;
+    transition: background 0.2s linear 0s, color 0.1s linear 0s;
+}
+#nav ul ul li{
+    float: none;
+}
+#nav ul li ul{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3 linear 0s;
+}
+#nav ul li:hover ul{
+    display:block;
+    opacity: 1;
+}
+#nav ul li ul li a{
+    display:block;
+    background-color: #74AED4;
+    padding: 10px 0px 10px 0px;
+    width: 15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: center;
+    font-family: arial;
+    color: #255270;
+    border-bottom: 1px solid #006080;
+    transition: background 0.1s linear 0s, color 0.1s linear 0s;
+}
+#nav{
+    position: absolute;
+    left: 50%;
+    width: 51vw;
+    margin-left: -25.5vw;
+    top: 20px;
+}
+#nav ul li:hover .alfa{
+    color: white;
+    background-color: #74AED4;
+    border-bottom: 1px solid #006080;
+}
+
+#nav ul li ul li a:hover{
+    background-color: #A2C6DE;
+    color: white;
+    border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+
+
+
+intro{
+    width: 35vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#introtekst{
+    font-family: Helvetica;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+}
+h1{
+    color: white;
+    font-family: tahoma;
+    background-color: #70D16D;
+    display: block;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+#extraPara{
+    color: white;
+    background-color: #D080FF;
+    border-radius: 40px;
+    font-family: Helvetica;
+    padding: 5px 15px 5px 15px;
+    margin: 0;
+}
+.sluit{
+    float: right;
+    text-align: center;
+    width: 3vw;
+    font-family: arial;
+    padding-top: 3px;
+    transition: all 0.2s;
+}
+.sluit:hover{
+    background-color: #C9C9C9; 
+    color: white;
+}
+
+
+.zoektitel{
+    width:30vw;
+    height: 15px;
+}
+#weergaveOpties{
+    width: 50vw;
+}
+
+#resultopties li{
+    float: left;
+    width: 33.33333%; 
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Helvetica;
+    background-color: #70D16D;
+    color: white;
+    transition: background-color 0.1s;
+}
+#resultopties li:hover{
+    background-color: #5AB557;
+}

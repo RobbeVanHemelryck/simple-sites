@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../resources/images/favicon.ico" />
+        <title> 30seconds - Art Gallery</title>
+        
+        <link rel="stylesheet" href="../resources/css/main.css">
+        <link rel="stylesheet" type = "text/css" href="../resources/css/contact.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="../resources/scripts/menu.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    </head>  
+    <body>
+        <div class="menu">
+            <div class="logo"></div>
+            <div class="hamburger"></div> 
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="../gallery/index.html">GALERIE</a></li>
+                <li><a href="../artists/index.html">ARTIESTEN</a></li>
+                <li><a href="../timeline/index.html">TIMELINE</a></li>
+                <li><a href="../contact/index.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <main>
+            <div class = "container">
+            <h1>Contactgegevens</h1>
+            <p>CEO: Robbe Van Pimpelryck<br>E-mail: mickey-moustache@gmail.com<br>Telefoon: 04 12 34 56 78</p>
+            <h1>Locatie</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.402063352665!2d4.322808299999989!3d50.8422385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c40f19faf0f9%3A0x4ef5b683135ecb1e!2sErasmushogeschool+Brussel+-+Campus+Kaai!5e0!3m2!1snl!2sbe!4v1456226096114" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <p></p>
+            <form>
+                <h1>Contacteer ons</h1>
+                <label for = "voornaam">Voornaam: </label>
+                <input id="txtVoornaam" type = "text" name = "voornaam" required>
+                <br>
+                <label for = "achternaam">Achternaam: </label>
+                <input id="txtAchternaam" type = "text" name = "achternaam" required>
+                <br>
+                <label for = "email">Email: </label>
+                <input id="txtEmail" type = "email" name = "email" required>
+                <br>
+                <label for = "comments">Opmerking:</label>
+                <textarea name = "comments" id = "comments"></textarea>
+                <br>
+                <input type = "submit" value = "Inzenden" id = "verzendknopje">
+            </form>
+                <script src="../resources/scripts/contact.js"></script>
+        </div>
+        </main>
+        <div class="footer">
+            <h6>&copy; 30seconds 2016</h6>
+        </div>
+    </body>
+</html>

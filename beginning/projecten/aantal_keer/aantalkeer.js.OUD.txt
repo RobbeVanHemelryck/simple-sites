@@ -1,0 +1,86 @@
+function zoek(){
+    document.getElementById("statistieken").innerHTML = "";
+    var aantal = [];
+    var source = document.getElementById("zoeksrc").value.toLowerCase();
+    var tezoeken = document.getElementById("tezoeken").value.toLowerCase();
+    var hoeveelWoorden = 1;
+    var beginI = -1;
+    for(var i= 0; i < tezoeken.length; i++){
+        if(tezoeken[i] != " " && beginI == -1) beginI= i;
+        if(tezoeken[i] == " " && beginI != -1) hoeveelWoorden++;
+    }
+    var temp = tezoeken.substring(beginI, tezoeken.length);
+    tezoeken = temp;
+    
+    var teZoeken = [];
+    var j = 0;
+    
+    for(var i = 0; i < hoeveelWoorden; i++){
+        while(tezoeken[j] != " " && j < tezoeken.length){
+            teZoeken[i] += tezoeken[j];
+            j++;
+        }
+        j++;
+    } 
+    
+    for(var i = 0; i < teZoeken.length; i++){
+        var temp = teZoeken[i].substring(9, teZoeken[i].length)
+        teZoeken[i] = temp;
+    }
+
+    var gevonden;
+    var doorgaan;
+    for(var x = 0; x < teZoeken.length; x++){
+        aantal[x] = 0;
+        for(var i = 0; i < source.length; i++){
+            gevonden = true;
+            doorgaan = false;
+            if(source[i-1] == " " && source[i + teZoeken[x].length] == " ") doorgaan = true;
+            if((i == 0) && (source[i + teZoeken[x].length] == " ")) doorgaan = true;
+            if((i == source.length - teZoeken[x].length) && source[i-1] == " ") doorgaan = true;
+            if(source.length == teZoeken[x].length) doorgaan = true;
+            if(doorgaan == true){
+                for(var j = i; j < teZoeken[x].length + i; j++){
+                    if(source[j] != teZoeken[x][j-i]){
+                        gevonden = false;
+                        break;
+                    }
+                }   
+                if(gevonden == true){
+                    aantal[x]++;
+                }
+            } 
+        }
+    }
+    geefweer(aantal, teZoeken);
+}
+function geefweer(aantal, teZoeken){
+    var totaalAantal =0;
+    for(var i =0; i < aantal.length; i++){
+        totaalAantal += aantal[i];
+    }
+    for(var i = 0; i < teZoeken.length; i++){
+        var x = document.createElement("div");
+        x.className = "geheel";
+        x.innerHTML = "<div class=\"grafiekCont\"><div class=\"grafiek\"><div class=\"aantal\"></div></div></div><div class=\"zoekterm\"></div>";
+        document.getElementById("statistieken").appendChild(x);
+        window.getComputedStyle(x).height;
+        window.getComputedStyle(x).paddingTop;
+        window.getComputedStyle(x).opacity;
+        document.getElementsByClassName("grafiek")[i].style.height = (aantal[i]/totaalAantal)*100 + "%";
+        document.getElementsByClassName("aantal")[i].style.paddingTop = aantal[i]*0.5 + "px";
+        document.getElementsByClassName("aantal")[i].style.opacity = 1;
+        document.getElementsByClassName("zoekterm")[i].style.opacity = 1;
+        document.getElementsByClassName("zoekterm")[i].innerHTML = teZoeken[i].toUpperCase();
+        document.getElementsByClassName("aantal")[i].innerHTML = aantal[i];
+    }
+    
+} 
+
+
+//verschillende paragrafen tekst, het aantal keer dat het te zoeken woord voorkomt in de verschillende paragrafen weergeven
+
+
+    //var x = document.createElement("p");
+    //x.innerHTML = src;
+    //document.getElementById("resultP").appendChild(x);

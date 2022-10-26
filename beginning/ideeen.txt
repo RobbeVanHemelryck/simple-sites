@@ -1,0 +1,3 @@
+- van meest naar minst
+- hover effect + info wara woorden voorkwamen + grafiek van %aanwezigheid
+- meerdere paragrafen

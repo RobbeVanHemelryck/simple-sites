@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Pattern from subtlepatterns.com*/
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("bg.png");
+    background-repeat: repeat;
+}
+
+.container{
+    width: 50vw;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.filler{
+    width: 50vw;
+    height: 2vw;
+}
+
+iframe{
+    width: 50vw;
+    height: 35vw;
+    margin-top: 3vh;
+}
+
+h1{
+    font-family: Arial;
+    size: 10vh;
+    color: whitesmoke;
+    margin-top: 3vh;
+    margin-bottom: 5px;
+}
+
+a{
+    font-family: Arial;
+    size: 4vh;
+    color: grey;
+    text-decoration: none;
+}

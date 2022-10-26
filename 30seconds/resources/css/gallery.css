@@ -1,0 +1,270 @@
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+#wrapper{
+    overflow: hidden;
+    height: auto;
+}
+
+.box {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+.end{
+    margin-right: 0vw;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.galleryImg{
+    max-width: 100%;
+    height: auto;
+}
+
+/*MEDIA QUERIES */
+
+@media only screen and (max-width: 450px) {
+    .box{
+        height: 100vw;
+        width: 100vw;
+        margin-right: 0vw;
+        margin-bottom: 5vw;
+    }
+    
+.popup
+{
+    position: fixed;
+    visibility: hidden;
+    background-color: rgb(245,245,245);
+    width: 100vw;
+    top: 65px;
+    height: calc(100vh - 65px);
+    z-index: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.image
+{
+    width: 100vw;
+    height: auto;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.text{
+    width: 90vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    overflow-y: visible;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.title{
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.artist{
+    width: 100%;
+    height: auto;
+    font-size: 25px;
+    font-style: oblique;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.desc{
+    height: 100vh;
+    font-size: 15px;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-bottom: 5vh;
+    overflow-y: visible;
+    margin-bottom: 5vh;
+    box-sizing: content-box;
+
+}
+}
+
+@media only screen and (min-width: 451px) and (max-width: 750px)
+{
+    .box {
+        height: 49vw;
+        width: 49vw;
+        margin-right: 2vw;
+        margin-bottom: 2vw;
+    }
+    
+    .end_two{
+        margin-right: 0vw;
+    }
+    
+    .end{
+        margin-right: 0vw;
+    }
+    
+.popup
+{
+    position: fixed;
+    visibility: hidden;
+    background-color: rgb(245,245,245);
+    width: 100vw;
+    top: 65px;
+    height: calc(100vh - 65px);
+    z-index: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.image
+{
+    width: 100vw;
+    height: auto;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.text{
+    width: 90vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    overflow-y: visible;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.title{
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.artist{
+    width: 100%;
+    height: auto;
+    font-size: 25px;
+    font-style: oblique;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.desc{
+    height: 100vh;
+    font-size: 15px;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-bottom: 5vh;
+    overflow-y: visible;
+    margin-bottom: 5vh;
+    box-sizing: content-box;
+
+}
+}
+
+
+
+
+@media only screen and (min-width: 751px) {
+    .box {
+        height: 19vw;
+        width: 19vw;
+        margin-right: 1vw;
+        margin-bottom: 1vw;
+        box-sizing: border-box;
+    }
+    
+    .box:hover{
+        box-shadow: 2px 2px 4px black;
+    }
+    
+.popup
+{
+    position: fixed;
+    visibility: hidden;
+    background-color: rgb(245,245,245);
+    width: 100vw;
+    top: 65px;
+    left:0;
+    height: calc(100vh - 65px);
+    z-index: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.image img
+{
+    display: block;
+    width: 40vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.text{
+    width: 80vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    overflow-y: visible;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.title{
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.artist{
+    width: 100%;
+    height: auto;
+    font-size: 25px;
+    font-style: oblique;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.desc{
+    height: 100vh;
+    font-size: 15px;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-bottom: 5vh;
+    overflow-y: visible;
+    margin-bottom: 5vh;
+    box-sizing: content-box;
+
+}
+}

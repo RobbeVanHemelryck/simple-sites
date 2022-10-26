@@ -1,0 +1,73 @@
+function zoek(){
+    
+    
+    //-------------------------------------------ALLES VAN TEZOEKEN---------------------------
+    document.getElementById("statistieken").innerHTML = "";
+    var tezoeken = document.getElementById("tezoeken").value.toLowerCase();
+    var temp = tezoeken.split(" ");
+    var temp2 = [];
+    var teZoeken = [];
+    var teller = 0;
+    //meerdere spaties filteren
+    for(var i = 0; i < temp.length; i++){
+        if(temp[i] != ""){
+            temp2[teller] = temp[i];
+            teller++;
+        }
+    }  
+    
+    //meerdere keren dezelfde teZoeken filteren
+    for(var i = 0; i < temp2.length; i++){
+        var voorgekomen = false;
+        for(var j = 0; j < teZoeken.length; j++){
+            if(temp2[i] == teZoeken[j])voorgekomen = true;
+        }
+        if(voorgekomen == false) teZoeken.push(temp2[i]);
+    }
+    
+    //-----------------------------------------ALLES VAN SOURCE---------------------------------
+    var source = [];
+    var aantal = new Array(aantalParagrafen);
+    for(var i = 0; i < aantal.length; i++){
+        aantal[i] = new Array(teZoeken.length);
+    }
+    var titel = [];
+    for(var g = 0; g < aantalParagrafen; g++){
+        source[g] = document.getElementsByClassName("zoeksrc")[g].value.toLowerCase();
+        titel[g] = document.getElementsByClassName("zoektitel")[g].value;
+        
+        //bepalen hoeveel keer alles voorkomt
+        var gevonden;
+        var doorgaan;
+        for(var x = 0; x < teZoeken.length; x++){
+            aantal[g][x] = 0;
+            for(var i = 0; i < source[g].length; i++){
+                gevonden = true;
+                doorgaan = false;
+                if(source[g][i-1] == " " && source[g][i + teZoeken[x].length] == " ") doorgaan = true;
+                if((i == 0) && (source[g][i + teZoeken[x].length] == " ")) doorgaan = true;
+                if((i == source[g].length - teZoeken[x].length) && source[g][i-1] == " ") doorgaan = true;
+                if(source[g].length == teZoeken[x].length) doorgaan = true;
+                if(doorgaan == true){
+                    for(var j = i; j < teZoeken[x].length + i; j++){
+                        if(source[g][j] != teZoeken[x][j-i]){
+                            gevonden = false;
+                            break;
+                        }
+                    }   
+                    if(gevonden == true){
+                        aantal[g][x]++;
+                    }
+                } 
+            }
+        }
+    }
+    for(var i = 0; i < aantal.length;i++){
+        for(var j = 0; j < aantal[i].length; j++){
+            console.log(aantal[i][j]);
+        }
+    }
+    geefweerBalk(aantal, teZoeken, titel);
+}
+
+

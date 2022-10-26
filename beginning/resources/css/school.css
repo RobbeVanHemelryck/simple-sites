@@ -1,0 +1,222 @@
+#groen{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 15vw;
+    z-index: -1;
+}
+#robertoswag{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 20vw;
+    z-index: -1
+}
+#logo{
+    position:absolute;
+    left: 20px;
+    top: 20px;
+    width: 20vw;
+    transition: width 0.3s ease-in-out 0s;
+}
+#logo:hover{
+    width: 22vw;
+}
+body{
+    background-color: #58aefe;
+}
+#wrapper{
+    width: 50vw;
+    height: 100vh;;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    background-color: white;
+}
+#wrapper p{
+    margin:0;
+    padding:0;
+    font-family: arial;
+    line-height: 22px;
+    text-align: justify;
+}
+#wrapper li a{
+    display: block;
+    width: 42vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 30px;
+    font-family: comic sans MS;
+    padding: 7px 0px 7px 0px;
+    color: white;
+    border-radius: 40px;
+    transition: width 0.2s ease-in-out 0s, background 0.2s ease-in 0s, color 0.2s linear 0s;
+}
+#SP{
+    background-color: #79c267;
+}
+#NF{
+    background-color: #c5d647;
+}
+#webdev{
+    background-color: #f5d63d;
+}
+#ERP{
+    background-color: #f28c33;
+}
+#BSWC{
+    background-color: #e868a2;
+}
+#ITF{
+    background-color: #bf62a6;
+}
+#SP:hover{
+    width: 47vw;
+    background-color: #54ac3e;
+    color: #000000;
+}
+#NF:hover{
+    width: 47vw;
+    background-color: #a2b133;
+    color: #000000;
+}
+#webdev:hover{
+    width: 47vw;
+    background-color: #dab918;
+    color: #000000;
+}
+#ERP:hover{
+    width: 47vw;
+    background-color: #d96e10;
+    color: #000000;
+}
+#BSWC:hover{
+    width: 47vw;
+    background-color: #cd3e7f;
+    color: #000000;
+}
+#ITF:hover{
+    width: 47vw;
+    background-color: #96337b;
+    color: #000000;
+}
+
+
+h1{
+    background-color: #E6E6E6;
+    font-family: helvetica;
+    font-weight: lighter;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+li{
+    margin: 0;
+    padding:0;
+    list-style-type: none;
+}
+.vsmcas{
+    float: left;
+    position: relative;
+
+}
+#projecten, #games{
+    display:block;
+    background-color: #87CFFF;
+    padding: 20px 0px 20px 0px;
+    width: 15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 17px;
+    text-align: center;
+    font-family: arial;
+    font-weight: 600;
+    color: #34768C;
+    transition: background 0.2s linear 0s, color 0.1s linear 0s;
+}
+#school{
+    display:block;
+    background-color: #87CFFF;
+    padding: 30px 0px 30px 0px;
+    width: 15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: center;
+    font-family: arial;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: #34768C;
+    transition: background 0.2s linear 0s, color 0.1s linear 0s;
+}
+#nav ul ul li{
+    float: none;
+}
+#nav ul li ul{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3 linear 0s;
+}
+#nav ul li:hover ul{
+    display:block;
+    opacity: 1;
+}
+#nav ul li ul li a{
+    display:block;
+    background-color: #74AED4;
+    padding: 10px 0px 10px 0px;
+    width: 15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: center;
+    font-family: arial;
+    color: #255270;
+    border-bottom: 1px solid #006080;
+    transition: background 0.1s linear 0s, color 0.1s linear 0s;
+}
+#nav{
+    position: absolute;
+    left: 50%;
+    width: 51vw;
+    margin-left: -25.5vw;
+    top: 20px;
+}
+#nav ul li:hover .alfa{
+    color: white;
+    background-color: #74AED4;
+    border-bottom: 1px solid #006080;
+}
+
+#nav ul li ul li a:hover{
+    background-color: #A2C6DE;
+    color: white;
+    border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
+}

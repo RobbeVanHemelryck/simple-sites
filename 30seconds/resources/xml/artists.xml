@@ -1,0 +1,99 @@
+﻿<xml>
+
+  <artist>
+    <code>01</code>
+    <fullname>Leonardo Da Vinci</fullname>
+    <name>Da Vinci</name>
+    <artistdesc>Leonardo da Vinci (Vinci, 15 april 1452 - Amboise, 2 mei 1519) was een architect, uitvinder, ingenieur, filosoof, natuurkundige, scheikundige, anatomist, beeldhouwer, schrijver, schilder en componist uit de Florentijnse Republiek, tijdens de Italiaanse renaissance. Hij wordt gezien als het schoolvoorbeeld van het renaissance-ideaal van de homo universalis en als genie.</artistdesc>
+    <imgpad>../resources/artists-img/leonardodavinci.jpg</imgpad>
+  </artist>
+
+  <artist>
+    <code>02</code>
+    <fullname>Pieter Bruegel de Oude</fullname>
+    <name>Bruegel</name>
+    <artistdesc>Pieter Bruegel de Oude (mogelijk Breda of Breugel, tussen 1525 en 1530 – Brussel, 9 september 1569) was een Brabantse kunstschilder. Hij was de vader van Pieter Brueghel de Jonge en van Jan Brueghel de Oude. Zelf schreef hij zijn naam en tekende hij zijn werken van 1559 tot aan zijn dood als Bruegel (zonder "h" dus), maar zijn zoons tekenden met Brueghel wat voor hem dan soms ook gebruikt wordt. Hij wordt in de literatuur soms ook de "Boeren-Bruegel" genoemd, omdat er in zijn oeuvre een aantal schilderijen voorkomen die scènes uit het boerenleven afbeelden.</artistdesc>
+    <imgpad>../resources/artists-img/pieterbreugel.jpg</imgpad>
+  </artist>
+
+  <artist>
+    <code>03</code>
+    <fullname>Claude Monet</fullname>
+    <name>Monet</name>
+    <artistdesc>Claude Oscar Monet (Parijs, 14 november 1840 – Giverny, 5 december 1926) was een Frans impressionistisch kunstschilder. De werken van Monet behoren tot het impressionisme. Monet probeerde vooral een weergave van een bepaald moment te maken. Hij schilderde landschappen, onder andere in Normandië.</artistdesc>
+    <imgpad>../resources/artists-img/claudemonet.jpg</imgpad>
+  </artist>
+
+  <artist>
+    <code>04</code>
+    <fullname>Vincent van Gogh</fullname>
+    <name>Van Gogh</name>
+    <artistdesc>Vincent Willem van Gogh (Zundert, 30 maart 1853 – Auvers-sur-Oise, 29 juli 1890) was een Nederlands kunstschilder. Zijn werk valt onder het postimpressionisme, een kunststroming die het negentiende-eeuwse impressionisme opvolgde. Van Goghs invloed op het expressionisme, het fauvisme en de vroege abstractie was enorm en kan worden gezien in vele andere aspecten van de twintigste-eeuwse kunst. Het Van Gogh Museum in Amsterdam is gewijd aan het werk van Van Gogh en zijn tijdgenoten.</artistdesc>
+    <imgpad>../resources/artists-img/vincentvangogh.jpg</imgpad>
+  </artist>
+
+  <artist>
+    <code>05</code>
+    <fullname>Rembrandt van Rijn</fullname>
+    <name>Rembrandt</name>
+    <artistdesc>Rembrandt Harmenszoon van Rijn (Leiden, 15 juli 1606 – Amsterdam, 4 oktober 1669) was een Nederlandse kunstschilder, etser en tekenaar. Hij geldt algemeen als een van de grootste schilders en etsers in de Europese kunst, en als de belangrijkste Hollandse meester van de 17e eeuw. Rembrandt vervaardigde in totaal ongeveer driehonderd schilderijen, driehonderd etsen en tweeduizend tekeningen, met als bekendste werk De Nachtwacht (1642). Zijn werk behoort tot de barok en is zichtbaar beïnvloed door het caravaggisme, alhoewel hij nooit in Italië is geweest.</artistdesc>
+    <imgpad>../resources/artists-img/rembrandtvanrijn.jpg</imgpad>
+  </artist>
+
+  <artist>
+    <code>06</code>
+    <fullname>Pablo Picasso</fullname>
+    <name>Picasso</name>
+    <artistdesc>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios Cipriano de la Santísima Trinidad Ruiz y Picasso (Málaga, 25 oktober 1881 – Mougins, 8 april 1973) was een Spaans kunstschilder, tekenaar, beeldhouwer, grafisch kunstenaar, sieraadontwerper en keramist. Hij was een van de bekendste Spaanse kunstschilders.</artistdesc>
+    <imgpad>../resources/artists-img/pablopicasso.jpg</imgpad>
+  </artist>
+
+  <artist>
+    <code>07</code>
+    <fullname>Johannes Vermeer</fullname>
+    <name>Vermeer</name>
+    <artistdesc>Johannes Vermeer (gedoopt te Delft, 31 oktober 1632 – begraven aldaar, 15 december 1675) is een van de beroemdste Nederlandse kunstschilders en leefde in de Gouden Eeuw. Vermeer had een voorkeur voor tijdloze, ingetogen momenten. Hij blijft raadselachtig vanwege de onnavolgbare kleurstelling en het verbijsterende lichtgehalte. Vermeers schilderijen, meestal genrestukken en een paar historiestukken, allegorieën en stadsgezichten, onderscheiden zich door een subtiel kleurgebruik en een ideale compositie. Hij gebruikte soms dure pigmenten en had een grote voorkeur voor ultramarijn en loodtingeel.</artistdesc>
+    <imgpad>../resources/artists-img/johannesvermeer.jpg</imgpad>
+  </artist>
+
+  <artist>
+    <code>08</code>
+    <fullname>Edvard Munch</fullname>
+    <name>Munch</name>
+    <artistdesc>Edvard Munch (Løten (Hedmark), 12 december 1863 – Ekely bij Oslo, 23 januari 1944) was een Noorse kunstschilder.Hij was dé grote voorman van het expressionisme. Aanvankelijk werd hij beïnvloed door het impressionisme en het symbolisme. Zijn werken waren vooral post-impressionistisch, maar droegen ook veel bij tot het expressionisme.</artistdesc>
+    <imgpad>../resources/artists-img/edvardmunch.jpg</imgpad>
+  </artist>
+
+  <artist>
+    <code>09</code>
+    <fullname>Sandro Botticelli</fullname>
+    <name>Botticelli</name>
+    <artistdesc>Zoals met vele Italiaanse kunstenaars uit zijn tijd het geval is, wordt zijn leven beschreven in het beroemde boek Le Vite van de 16e eeuwse Giorgio Vasari. Zijn bijnaam kreeg hij vanwege zijn broer, die zo dik was dat hij Botticelli oftewel "het tonnetje" werd genoemd. Botticelli werd geboren in de rione genaamd Ognissanti in Florence. Hij zou kort in de leer geweest zijn bij "het vaatje", een goudsmid. Bij wie hij daarna in de leer ging is onduidelijk; het vermoeden bestaat dat dit bij Fra Filippo Lippi was, maar ook Andrea del Verrocchio wordt wel genoemd in dit verband. In het laatste geval zou Botticelli Leonardo da Vinci als medeleerling hebben gehad.</artistdesc>
+    <imgpad>../resources/artists-img/sandrobotticelli.jpg</imgpad>
+  </artist>
+
+  <artist>
+    <code>10</code>
+    <fullname>Paul Cézanne</fullname>
+    <name>Cézanne</name>
+    <artistdesc>Paul Cézanne (Aix-en-Provence, 19 januari 1839 – aldaar, 22 oktober 1906) was een Franse kunstschilder. Cézanne behoort tot het postimpressionisme, een Europese kunststroming die volgt op het impressionisme. Zijn werk vormde een brug tussen het impressionisme en het kubisme. Paul Cézanne werd geboren als zoon van de hoedenhandelaar en latere bankier Louis-Auguste Cézanne en Anne-Elisabeth-Honorine Aubert. Zijn ouders trouwden pas in 1844, na de geboorte van Paul en zijn zus Marie (1841).</artistdesc>
+    <imgpad>../resources/artists-img/paulcezanne.jpg</imgpad>
+  </artist>
+
+  <artist>
+    <code>11</code>
+    <fullname>Michelangelo Buonarroti</fullname>
+    <name>Michelangelo</name>
+    <artistdesc>Michelangelo di Lodovico Buonarroti Simoni, beter bekend onder alleen zijn voornaam Michelangelo (Caprese, 6 maart 1475 – Rome, 18 februari 1564) was een Italiaans kunstschilder, beeldhouwer, architect en dichter. Hij wordt beschouwd als een van de belangrijkste kunstenaars uit de Italiaanse renaissance.</artistdesc>
+    <imgpad>../resources/artists-img/michelangelobuonarroti.jpg</imgpad>
+  </artist>
+
+  <artist>
+    <code>12</code>
+    <fullname>Piet Mondriaan</fullname>
+    <name>Mondriaan</name>
+    <artistdesc>Pieter Cornelis (Piet) Mondriaan (Amersfoort, 7 maart 1872 – New York, 1 februari 1944) was een Nederlandse kunstschilder en kunsttheoreticus, die op latere leeftijd in het buitenland woonde en werkte. Mondriaan wordt algemeen gezien als een pionier van de abstracte en non-figuratieve kunst. Vooral zijn latere geometrisch-abstracte werk, met de kenmerkende horizontale en verticale zwarte lijnen en primaire kleuren, is wereldberoemd en dient als inspiratiebron voor vele architecten en ontwerpers van toegepaste kunst. Hij was een van de belangrijkste medewerkers van het tijdschrift De Stijl en ontwikkelde een eigen kunsttheorie, die hij Nieuwe Beelding of neoplasticisme noemde. Hij is in het buitenland beter bekend als Mondrian, een wijziging die hij zelf invoerde nadat hij in Parijs was gaan wonen.</artistdesc>
+    <imgpad>../resources/artists-img/pietmondriaan.jpg</imgpad>
+  </artist>
+
+</xml>

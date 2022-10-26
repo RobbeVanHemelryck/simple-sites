@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../resources/images/favicon.ico" />
+        <title> 30seconds - Timeline</title>
+        <link rel="stylesheet" href="../resources/css/main.css">
+        <link rel="stylesheet" href="../resources/css/timeline.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="../resources/scripts/menu.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="../resources/scripts/timeline.js"></script>
+	</head> 
+    
+    <body>
+        <div id="popup" onclick="test()">
+            <div id="popupImg">
+                <img id="groteImg" src="">
+            </div>
+        </div>
+        <div class="menu">
+            <div class="logo"></div>
+            <div class="hamburger"></div> 
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="../gallery/index.html">GALERIE</a></li>
+                <li><a href="../artists/index.html">ARTIESTEN</a></li>
+                <li><a href="../timeline/index.html">TIMELINE</a></li>
+                <li><a href="../contact/index.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <main>
+            
+            <div id="witteLinkerkant"></div>
+            <div id="tijdlijn">
+                <a href="#romeinseSchilderkunst" onclick="scrollSmoothly(this)"><li id="0"><jaartal>0</jaartal></li></a>
+                <a href="#romeinseSchilderkunst" onclick="scrollSmoothly(this)"><li id="100"><jaartal>100</jaartal></li></a>
+                <a href="#romeinseSchilderkunst" onclick="scrollSmoothly(this)"><li id="200"><jaartal>200</jaartal></li></a>
+                <a href="#romeinseSchilderkunst" onclick="scrollSmoothly(this)"><li id="300"><jaartal>300</jaartal></li></a>
+                <a href="#romeinseSchilderkunst" onclick="scrollSmoothly(this)"><li id="400"><jaartal>400</jaartal></li></a>
+                <a href="#vroegChristelijkeKunst" onclick="scrollSmoothly(this)"><li id="500"><jaartal>500</jaartal></li></a>
+                <a href="#byzantijnseKunst" onclick="scrollSmoothly(this)"><li id="600"><jaartal>600</jaartal></li></a>
+                <a href="#merovingischeKunst" onclick="scrollSmoothly(this)"><li id="700"><jaartal>700</jaartal></li></a>
+                <a href="#karolingischeKunst" onclick="scrollSmoothly(this)"><li id="800"><jaartal>800</jaartal></li></a>
+                <a href="#karolingischeKunst" onclick="scrollSmoothly(this)"><li id="900<"><jaartal>900</jaartal></li></a>
+                <a href="#romaanseKunst" onclick="scrollSmoothly(this)"><li id="1000"><jaartal>1000</jaartal></li></a>
+                <a href="#romaanseKunst" onclick="scrollSmoothly(this)"><li id="1100"><jaartal>1100</jaartal></li></a>
+                <a href="#renaissance12" onclick="scrollSmoothly(this)"><li id="1200"><jaartal>1200</jaartal></li></a>
+                <a href="#gotischeKunst" onclick="scrollSmoothly(this)"><li id="1300"><jaartal>1300</jaartal></li></a>
+                <a href="#renaissance" onclick="scrollSmoothly(this)"><li id="1400"><jaartal>1400</jaartal></li></a>
+                <a href="#renaissance" onclick="scrollSmoothly(this)"><li id="1500"><jaartal>1500</jaartal></li></a>
+                <a href="#barok" onclick="scrollSmoothly(this)"><li id="1600"><jaartal>1600</jaartal></li></a>
+                <a href="#rococo" onclick="scrollSmoothly(this)"><li id="1700"><jaartal>1700</jaartal></li></a>
+                <a href="#romantiek" onclick="scrollSmoothly(this)"><li id="1800"><jaartal>1800</jaartal></li></a>
+                <a href="#postimpressionisme" onclick="scrollSmoothly(this)"><li id="1900"><jaartal>1900</jaartal></li></a>
+                <a href="#postimpressionisme" onclick="scrollSmoothly(this)"><li id="2000"><jaartal>2000</jaartal></li></a>
+            </div>
+            <div id="witteLinkerkantMini"></div>
+            <div id="tijdlijnMini">
+                <a href="#romeinseSchilderkunst" onclick="scrollSmoothly(this)"><li id="0"><jaartal>0</jaartal></li></a>
+                <a href="#romeinseSchilderkunst" onclick="scrollSmoothly(this)"><li id="100"><jaartal>100</jaartal></li></a>
+                <a href="#romeinseSchilderkunst" onclick="scrollSmoothly(this)"><li id="200"><jaartal>200</jaartal></li></a>
+                <a href="#romeinseSchilderkunst" onclick="scrollSmoothly(this)"><li id="300"><jaartal>300</jaartal></li></a>
+                <a href="#romeinseSchilderkunst" onclick="scrollSmoothly(this)"><li id="400"><jaartal>400</jaartal></li></a>
+                <a href="#vroegChristelijkeKunst" onclick="scrollSmoothly(this)"><li id="500"><jaartal>500</jaartal></li></a>
+                <a href="#byzantijnseKunst" onclick="scrollSmoothly(this)"><li id="600"><jaartal>600</jaartal></li></a>
+                <a href="#merovingischeKunst" onclick="scrollSmoothly(this)"><li id="700"><jaartal>700</jaartal></li></a>
+                <a href="#karolingischeKunst" onclick="scrollSmoothly(this)"><li id="800"><jaartal>800</jaartal></li></a>
+                <a href="#karolingischeKunst" onclick="scrollSmoothly(this)"><li id="900<"><jaartal>900</jaartal></li></a>
+                <a href="#romaanseKunst" onclick="scrollSmoothly(this)"><li id="1000"><jaartal>1000</jaartal></li></a>
+                <a href="#romaanseKunst" onclick="scrollSmoothly(this)"><li id="1100"><jaartal>1100</jaartal></li></a>
+                <a href="#renaissance12" onclick="scrollSmoothly(this)"><li id="1200"><jaartal>1200</jaartal></li></a>
+                <a href="#gotischeKunst" onclick="scrollSmoothly(this)"><li id="1300"><jaartal>1300</jaartal></li></a>
+                <a href="#renaissance" onclick="scrollSmoothly(this)"><li id="1400"><jaartal>1400</jaartal></li></a>
+                <a href="#renaissance" onclick="scrollSmoothly(this)"><li id="1500"><jaartal>1500</jaartal></li></a>
+                <a href="#barok" onclick="scrollSmoothly(this)"><li id="1600"><jaartal>1600</jaartal></li></a>
+                <a href="#rococo" onclick="scrollSmoothly(this)"><li id="1700"><jaartal>1700</jaartal></li></a>
+                <a href="#romantiek" onclick="scrollSmoothly(this)"><li id="1800"><jaartal>1800</jaartal></li></a>
+                <a href="#postimpressionisme" onclick="scrollSmoothly(this)"><li id="1900"><jaartal>1900</jaartal></li></a>
+                <a href="#postimpressionisme" onclick="scrollSmoothly(this)"><li id="2000"><jaartal>2000</jaartal></li></a>
+            </div>
+            <div  onclick="toonTijdlijn()" id="expandCont"><img id="expand" src="..//resources/images/expand_timeline.png"></div>
+            <div id="content">
+                
+                <periode><h1 id="top">De oudheid</h1></periode>
+                <div id="romeinseSchilderkunst">
+                    <!--BRON: https://nl.wikipedia.org/wiki/Romeinse_schilderkunst-->
+                <h2>Romeinse schilderkunst</h2>
+                <p>Onze kennis van de Romeinse schilderkunst berust grotendeels op de vondsten van fresco’s uit de plaatsen die na de uitbarsting van de Vesuvius in 79 n.C. bedolven raakten. Van de Griekse schilderijen die de Romeinen naar Rome importeerden is niets bewaard gebleven. Fresco s zijn vaak wel bewaard gebleven. Maar is er evenmin iets bewaard van de schilderijen die sinds het einde van de 3e eeuw v.Chr. gemaakt werden voor triomftochten.</p><br>
+                <h3>Vier Pompeiaanse stijlen</h3>
+                
+                <ol>
+                    <li>
+                        <h4>Eerste stijl: incrustatiestijl</h4>
+                        <p>Deze stijl kenmerkt zich door de 
+                            <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                                    <img src="..//resources/images/timeline/1%20-%20pomp1.jpg">
+                                    <bijschrift>klik om te vergroten</bijschrift>     
+                                </afbeelding>
+                                <tekst>imitatie van gekleurde marmeren</tekst>
+                            </a> 
+                        platen (crustae). Het moest lijken of de wand bedekt was met kostbaar marmer. Deze stijl is niet exclusief Romeins, maar komt in de hele hellenistische wereld voor.</p>
+                    </li><br>
+                    
+                    <li>
+                        <h4>Tweede stijl: architectuurstijl</h4>
+                        <p>De schildering van marmeren platen wordt in deze stijl gecombineerd met zuilen. Zo ontstaat de illusie dat men kijkend naar de wand een verder liggende ruimte in kijkt. De wand wordt ook inspringend weergegeven en met ramen en openingen die uitzicht bieden op bijvoorbeeld een tholos. Ook zijn er wel deuren die open lijken te kunnen. In een latere fase gaat de afsluitende dwarswand ook wel naar beneden en wordt erboven een uitzicht op een achterliggende zuilenhal geschilderd. De architectonische elementen worden opgesierd met ornamenten als theatermaskers en metalen vaatwerk. Aan het eind van de tweede stijl verdwijnen de doorkijkjes weer en komt er een centrale aedicula tussen de zuilen met een grote schildering.
+                        <br>
+                        Voorbeelden van deze stijl zijn het cubiculum van de 
+                            <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                                    <img src="..//resources/images/timeline/2%20-%20pomp2.jpg">
+                                    <bijschrift>klik om te vergroten</bijschrift>     
+                                </afbeelding>
+                                <tekst>Villa van Fannius Synistor uit Boscoreale</tekst>
+                            </a> 
+                            , de beroemde fresco’s uit de Villa dei misteri in Pompeï, fresco’s uit het Huis van Livia in Rome, een aantal van de fresco’s uit de Villa van Poppaea te Oplontis en de Odysseeschilderingen uit een Romeins huis op de Esquilijn (nu in de Vaticaanse Musea).</p>
+                    </li><br>
+                    
+                    <li>
+                        <h4>Derde stijl: ornamentele stijl</h4>
+                        <p>In de derde stijl is de wand ingedeeld in vlakken. De zuilen zijn zeer slank en dienen niet meer om architectuur na te bootsen, maar om de wand in te delen. Ook andere elementen zoals kandelabers worden voor de indeling gebruikt. De wand is vaak 
+                            <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                                    <img src="..//resources/images/timeline/3%20-%20pomp3.jpg">
+                                    <bijschrift>klik om te vergroten</bijschrift>     
+                                </afbeelding>
+                                <tekst>horizontaal in drieën gedeeld</tekst>
+                            </a> 
+                            : sokkel, middenzone en bovenzone. Ook verticaal is er vaak een driedeling, zodat er een duidelijk middenpaneel ontstaat waarop een groot figuurstuk werd geschilderd. Dat lijkt zo haast een los opgehangen schilderij. De onderwerpen van deze figuurstukken zijn meestal aan de Griekse mythologie ontleend. Op de vlakken naast het middenpaneel zijn er meestal kleinere schilderijtjes en komen vaak tuinen voor. Aan het eind van deze stijlperiode komen architectuurelementen in de bovenzone terug.</p>
+                    </li><br>
+                    
+                    <li>
+                        <h4>Vierde stijl: fantastische of barokke stijl</h4>
+                        <p>In deze periode worden er weer architectuurelementen toegevoegd: niet alleen in de bovenzone is er een doorkijk, maar ook naast het figuurstuk worden verticale stroken geopend, die uitzicht bieden op een zuilengalerij of imitaties van theaterdecors. Het figuurstuk is nu vrijwel vierkant. De andere vlakken worden weergegeven als een soort wandkleden. Het geheel is druk versierd met architectonische elementen, kleine figuren, maskers en stillevens. Sommige wanden lijken wel een weergave van een theaterwand versierd met zuilen en beelden.
+                        <br>
+                        Tot de bekendste voorbeelden van de vierde stijl behoren veel fresco’s uit het Huis van de Vettii in Pompeï, de schilderingen uit de Tempel van Isis in Pompeï (nu in het Archeologisch Museum te Napels) en 
+                            <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                                    <img src="..//resources/images/timeline/4%20-%20pomp4.jpg">
+                                    <bijschrift>klik om te vergroten</bijschrift>     
+                                </afbeelding>
+                                <tekst>de fresco’s uit de Domus Aurea in Rome.</tekst>
+                            </a> 
+                            </p>
+                    </li><br>
+                </ol>
+                </div>
+                
+                <periode><h1>De vroege middeleeuwen</h1></periode>
+                <div id="vroegChristelijkeKunst">
+                <h2>Vroeg-Christelijke kunst</h2>
+                    <!--BRON: http://kunstgeschiedenis.jouwweb.nl/klassieke-kunst/vroeg-christelijke-kunst-->
+                <p>In het begin staat de verlossingsgedachte centraal.
+                    Het algemene thema is: Christus verlost de mens uit de bitterheid van de dood.
+                    Op sarcofagen en muren van de catacomben (onderaardse begraafplaatsen) komen wij taferelen tegen die 
+                    <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                                    <img src="..//resources/images/timeline/5%20-%20christ.jpg">
+                                    <bijschrift>klik om te vergroten</bijschrift>     
+                                </afbeelding>
+                                <tekst>het leven van Jezus verbeelden</tekst>
+                            </a> 
+                     en de mens voorstellen als een smekeling om genade.
+                    In de eerste helft van de 4e eeuw worden de eerste basilieken gebouwd.</p>
+                    </div>
+                <br>
+                <div id="byzantijnseKunst">
+                <h2>Byzantijnse kunst</h2>
+                    <!--BRON: https://nl.wikipedia.org/wiki/Byzantijnse_schilderkunst-->
+                <p>De Byzantijnse schilderkunst bestaat vooral uit miniatuurkunst. In de 6e eeuw na Christus kwamen christelijke afbeeldingen in de boeken en handschriften.
+                
+                    In de Weense Genesis staat een miniatuur met als tafereel Jozef en zijn broeders. Deze miniatuur is gemaakt in de 6e eeuw. De figuren bewegen zich op de voorgrond. Het gebeurt zelden dat een tafereel in een landschap geplaatst wordt. Er zijn verschillende scènes bij elkaar gezet zodat de miniatuur de volle bladzijde beslaat.
+                    <br>
+                    Kenmerkend voor de Byzantijnse miniatuurkunst is de diepteverwerking die werd vermeden en 
+                    <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                                    <img src="..//resources/images/timeline/6%20-%20byzantijnse.jpg">
+                                    <bijschrift>klik om te vergroten</bijschrift>     
+                                </afbeelding>
+                                <tekst> de figuren op de miniaturen zijn redelijk levendig.</tekst>
+                            </a> 
+                    Het ontbreken van illustratief bijwerk zoals achtergronden verleent de miniaturen een grotere waarde.</p>
+                    </div>
+                <br>
+                <div id="merovingischeKunst">
+                <h2>Merovingische kunst</h2>
+                    <!--BRON: https://nl.wikipedia.org/wiki/Merovingische_kunst-->
+                <p>Merovingische kunst is een samenvattende benaming voor de kunst in de door de Franken bewoonde gebieden (het hedendaagse Frankrijk en delen van België, Nederland en Duitsland) ten tijde van de koningen uit het geslacht der Merovingen (5e-8e eeuw). De kunst uit deze periode vertoont geen homogeen karakter, omdat invloeden van buitenaf plaatselijk sterk verschilden. Als voorspel van de erop volgende Karolingische kunst is de Merovingische kunst van eminente betekenis, voor de definitieve vorming van de westerse kunst.</p>
+                    </div>
+                <br>
+                <div id="karolingischeKunst">
+                <h2>Karolingische kunst</h2>
+                    <!--BRON: https://nl.wikipedia.org/wiki/Karolingische_kunst-->
+                <p>Als keizer beschouwde Karel de Grote zich gelijk aan de Keizers van het Oost-Romeinse rijk. Naast de typische germaanse invloeden, waren er dan ook heel wat invloeden van de Oost-Romeinse kunst, evenals invloeden van de vroeg christelijke kunst en van de oud Romeinse kunstvormen.<br>
+
+                    Twee typische uitingen van Karolingische kunst zijn: De zin voor 
+                    <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                            <img src="..//resources/images/timeline/7%20-%20karol.jpg">
+                            <bijschrift>klik om te vergroten</bijschrift>     
+                        </afbeelding>
+                        <tekst> monumentaliteit en de grotere aandacht voor het gebruik van de menselijke vorm.</tekst>
+                    </a> 
+                    Geleidelijk aan echter verlieten de Karolingische kunstenaars deze klassieke vorm van kunst en begonnen ze zaken op andere manieren uit te beelden waardoor ze de grondslag legden voor de Romaanse kunst vanaf het midden van de 10de eeuw.</p><br>
+                <p>De meeste schilderwerken van de Karolingische renaissance zijn verloren gegaan. Toch kunnen we nog twee soorten onderscheiden, nl de miniatuurschilderkunst en de muurschilderingen.</p><br>
+                <ol>
+                    <li><h4>Miniaturen</h4>
+                        <p>De voornaamste centra van de miniatuurschildering onder de Karolingers waren de scriptoria van de keizerlijke hoven, bisdommen en abdijen in het gebied tussen de Loire en Rijn. Namelijk:</p>
+                        <ul>
+                            <li>Metz, Corbie, Reims en Tours in Frankrijk.</li>
+                            <li>Trier, Fulda, Reichenau en Aken in Duitsland.</li>
+                            <li>Echternach in Luxemburg.</li>
+                            <li>Sankt Gallen in Zwitserland.</li>
+                        </ul>
+                    <p>Elk scriptorium voegde zijn eigen kenmerken toe aan de miniaturen. Ook hier traden dezelfde kenmerken als in de ivoorsnijkunst opnieuw naar voren. Centraal waren er menselijke figuren omgeven door fauna en flora. Ook de Byzantijnse invloed is merkbaar: de plastische opstelling van de figuren en de gedrapeerde gewaden. Een overvloed aan kleuren met een levendige en vlotte tekening zijn duidelijk een erfgoed van de Franken.</p>
+                    </li>
+                    <br>
+                    <li><h4>Muurschilderingen</h4>
+                        <p>De Muurschilderingen uit de tijd van de Karolingen zijn schaars te vinden en diegenen die nog overblijven zijn dikwijls beschadigd of er zijn enkel nog fragmenten van over. Ook hier gaat de Karolingische renaissance over in de ottoonse renaissance, waar ook muurschilderingen te vinden zijn. Een voorbeeld hiervan is te vinden in de Sint-Joriskerk in Reichenau-Oberzell. Hierna wordt de overgang gemaakt naar de Romaanse kunst.</p>
+                    </li>
+                </ol>
+                    </div>
+                <br>
+                <periode><h1>De late middeleeuwen</h1></periode>
+                <div id="romaanseKunst">
+                <h2>Romaanse kunst</h2>
+                    <!--BRON: https://nl.wikipedia.org/wiki/Romaanse_kunst-->
+                    <p>De romaanse kunst is de naam van de kunststroming die tussen ongeveer 1000 en 1200 dominant was in West-Europa. De term romaans dateert uit 1820 en werd voor het eerst gebruikt door de Franse kunsthistoricus Charles de Gerville, die in de architectuur overeenkomsten zag met die van het oude Rome. De term werd algemeen geaccepteerd nadat De Gervilles' bekendere collega Arcis de Caumont hem overnam en werd al snel ook toegepast voor andere kunstvormen.<br><br>De meest opvallende evolutie, na het Byzantijnse, was wel het verschijnen van een ongekende 
+                    <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                            <img src="..//resources/images/timeline/8%20-%20romaans.jpg">
+                            <bijschrift>klik om te vergroten</bijschrift>     
+                        </afbeelding>
+                        <tekst>expressiviteit</tekst>
+                    </a> 
+                         in de streng gestiliseerde figuren, de expressies die terugkomen in de figuur, op de talrijke fresco's in de Catalaanse romaanse kerken. Die expressieve gebarenstijl vinden we in de muurschilderingen van Saint-Savin-sur-Gartempe, in de abdij Prüfening, in Sant'Angelo in Formis bij het Italiaanse Capua en op het Bodensee-eiland Reichenau.<br>
+                    Specifiek romaans verluchte manuscripten zijn onder andere de Moralia in Job van de cisterciënzerabdij in Citeaux en het liturgische werk van abt Stephen Harding in dezelfde abdij.</p>
+                </div>
+                <br>
+                <div id="renaissance12">
+                <h2>Renaissance van de 12e eeuw</h2>
+                    <!--BRON: https://nl.wikipedia.org/wiki/Renaissance_van_de_twaalfde_eeuw-->
+                    <p>De renaissance van de twaalfde eeuw was een culturele bloeiperiode tijdens de hoge middeleeuwen die gekenmerkt werd door veranderingen op velerlei gebied. Sociale, politieke en economische transformaties gingen samen met een intellectuele en artistieke heropleving, die sommige historici beschouwen als een nieuwe bloeitijd van de klassieke cultuur. Zowel de Karolingische renaissance als de renaissance van de twaalfde eeuw kunnen worden gezien als een voorafspiegeling van de Italiaanse renaissance.<br><br>Veel kunstwerken uit de 12e eeuw zijn verloren gegaan, vooral tijdens de beeldenstormen van de 16e eeuw en de Franse revolutie aan het eind van de 18e eeuw. Gouden en zilveren siervoorwerpen werden omgesmolten om nieuwe producten aangepast aan de smaak van de tijd te kunnen maken. Rijkversierde manuscripten werden hergebruikt en muurschilderingen eenvoudigweg overgeschilderd. Het interieur van de Sint-Clemenskerk in Bonn-Schwarzrheindorf is een zeldzaam voorbeeld van 12e-eeuwse schilderkunst. De eeuwenlang dichtgemetselde Sint-Gabriëlskapel in de Kathedraal van Canterbury geeft met haar 
+                        <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                            <img src="..//resources/images/timeline/9%20-%20ren12.jpg">
+                            <bijschrift>klik om te vergroten</bijschrift>     
+                        </afbeelding>
+                        <tekst>veelkleurige schilderingen</tekst>
+                    </a>
+                         en rijkbewerkte kapitelen een indruk hoe de gehele kerk er ooit uitzag.</p>
+                </div>
+                <br>
+                <div id="gotischeKunst">
+                <h2>Gotische kunst</h2>
+                    <!--BRON: https://nl.wikipedia.org/wiki/Gotische_kunst-->
+                    <p>Het ontstaan van de gotische stijl in de schilderkunst was een zeer geleidelijk proces en het kwam pas op gang omstreeks het begin van de dertiende eeuw. Van de vroeggotische schilderkunst op paneel of als fresco is er in Frankrijk bijzonder weinig bewaard gebleven. Ook uit wat later de Nederlanden zou worden is er zo goed als niets overgeleverd op een aantal grafschilderingen uit de dertiende en veertiende eeuw na. <br>In Italië komt de gotische schilderkunst pas tegen het einde van de dertiende eeuw op gang met Giotto, Duccio en de Sienese school. In Duitsland zijn er wel enkele schilderingen bewaard gebleven uit het begin van de dertiende eeuw zoals de plafondschildering op hout in de St.-Michaëlskerk in Hildesheim, die omstreeks 1230 tot stand kwam. Het werk is gemaakt in de zogenaamde zackenstil, een overgang tussen de romaanse en de gotische kunst. Een ander voorbeeld van de vroege Gotiek is het Soester altaar uit 1230 à 1240, nu in het Staatliche Museen Preussischer Kulturbesitz in Berlijn. Voor het ontstaan en de vroege geschiedenis van de schilderkunst moet men zich baseren op de glasschilderkunst en de boekverluchting.
+                    <br><br>    
+                    Ondanks het feit dat de frescokunst in Toscane en Rome niet echt aan belang inboette, ontwikkelde de paneelschilderkunst zich daar vroeger dan in Noord-Europa. Maar vanaf het einde van de veertiende eeuw wint de paneelschilderkunst, ook ten noorden van de Alpen, meer en meer aan belang. Dankzij het verblijf van Simone Martini en Lippo Memmi aan het pauselijk hof in Avignon, raakte het Italiaanse werk meer en meer in Frankrijk, Duitsland en Midden-Europa bekend. Uit de wederzijdse beïnvloeding van die diverse stijlen ontstond de internationale gotiek.
+                    <br><br>  
+                    In de Nederlanden werd in de late veertiende eeuw de basis gelegd voor de grote bloeiperiode van de Zuid-Nederlandse schilderkunst in de vijftiende eeuw. Uit die periode kennen we enkele schilders zoals Jan Maelwael, Melchior Broederlam, Jean de Beaumetz en André Beauneveu allen afkomstig uit de Nederlanden. Het is in deze periode dat de paneelschilderkunst en de altaarstukken in de Nederlanden populair worden.
+                    <br><br> 
+                    De internationale gotiek zet zich in Frankrijk nog een ganse tijd door. In de Nederlanden zien we de tendens naar meer realisme de bovenhand halen terwijl in 
+                        <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                            <img src="..//resources/images/timeline/10%20-%20gotisch.jpg">
+                            <bijschrift>klik om te vergroten</bijschrift>     
+                        </afbeelding>
+                        <tekst>Italië de renaissance volop aan de gang is.</tekst>
+                    </a> 
+                          Schilders zoals Robert Campin, Rogier van der Weyden en Jan van Eyck zetten in de Zuidelijke-Nederlanden het einde van de gotische schilderkunst in of luiden het begin van de noordelijke renaissance in.</p>
+                </div>
+                <br>
+                <periode><h1>De Nieuwe Tijd</h1></periode>
+                <div id="renaissance">
+                <h2>De Renaissance</h2>
+                    <!--BRON: https://nl.wikipedia.org/wiki/Renaissance-->
+                    <p>Aan het begin van de vijftiende eeuw ontstond er in Italië een hernieuwde belangstelling voor de kunst en cultuur van de klassieke oudheid.deze periode kreeg de naam Renaissance, wat wedergeboorte betekent. In de Renaissance veranderde veel in het denken van de mens. Tijdens de Middeleeuwen richtte men zich op de religie en hiernamaals, maar in de Renaissance ontdekte men opnieuw de schoonheid van de wereld en van het menselijk lichaam. Door het afnemen van de invloed van de kerk kwam de mens zelf centraal te staan.<br>
+                    In de schilderkunst probeerde men de mensfiguren en de ruimte eromheen 
+                        <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                            <img src="..//resources/images/timeline/11%20-%20renaissance.jpg">
+                            <bijschrift>klik om te vergroten</bijschrift>     
+                        </afbeelding>
+                        <tekst>zo echt mogelijk weer te geven</tekst>
+                    </a> 
+                        . Men ging zo veel mogelijk natuurgetrouw schilderen. De natuur werd met aandacht geschilderd en de achtergrond in een juist perspectief weergegeven. In de schilderijen uit de Renaissance vinden geen afsnijdingen plaats en de figuren staan in een denkbeeldige driehoeks/ovaal-compositie gerangschikt. Dit werd als evenwichtig en harmonieus ervaren. Ook is er een voorkeur voor een symmetrische compositie.
+                    </p>
+                </div>
+                <br>
+                <div id="barok">
+                <h2>Barok</h2>
+                    <!--BRON: http://www.scholieren.com/samenvatting/2137-->
+                    <p>Tijdens de 17e eeuw is de barok vooral belangrijk in de schilderskunst, met name in die gebieden die overwegend katholiek waren. Een belangrijk kenmerk van de Barok is de 
+                        <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                            <img src="..//resources/images/timeline/13%20-%20barok.jpg">
+                            <bijschrift>klik om te vergroten</bijschrift>     
+                        </afbeelding>
+                        <tekst>dynamiek, de actie</tekst>
+                    </a> 
+                        , die de schilders probeerde vast te leggen, in tamelijk ingewikkelde composities: diagonaal, piramidaal en asymmetrisch. <br>Doordat men een groot dramatisch effect in hun schilderijen wilden creëren werden de personen vaak met sterk uitgebeelde gevoelens en heftige gebaren afgebeeld. Verder werden er dramatische effecten bereikt door sterke licht/donker contrasten en diepe volle kleuren. Er is beweging veroorzaakt door een dynamische compositie met diagonale lijnen, verspringende vlakken en afsnijdingen. De barokschilder schildert realistisch, men ontdekte de schoonheid van de zichtbare wereld en probeerde dit alles zo echt mogelijk af te beelden en schilderde in een atelier.</p>
+                </div>
+                <br>
+                <div id="rococo">
+                <h2>Rococo</h2>
+                    <!--BRON: http://kunst-en-cultuur.infonu.nl/geschiedenis/50406-rococo-stijl-1720-1775.html-->
+                    <p>Deze stijl kwam als vervolg op de barok. In de rococo gaat men nog verder met 
+                        <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                            <img src="..//resources/images/timeline/14%20-%20rococo.jpg">
+                            <bijschrift>klik om te vergroten</bijschrift>     
+                        </afbeelding>
+                        <tekst> rijke versieringen, vloeiende vormen</tekst>
+                    </a> 
+                        en het stimuleren van de zintuigen dan in de barok. De rococo wordt nauw geassocieerd met de rooms-katholieke wereld en vooral de heilige roomse Kerk en Zuid-Duitsland. Het legt de nadruk op de mysterieuze en intuïtieve aspecten van het geloof; er zijn dan ook talrijke kerken, kloosters en paleizen voor keurvorsten in de rococostijl gebouwd.
+                    <br><br>
+                    In zijn beste vorm combineert de rococo de abstractie van bouwkundige principes die op vorm en geometrie zijn gebaseerd, met het vertellende effect van weelderige ornamentiek.
+                    De kunstenaars van de rococo-stijl zetten de versierende vormgeving van de barok voort.
+                    Deze pronkerige interieurstijl was vooral geliefd bij adellijke personen en de rijke burgerij.
+                    Rococo is een echte ‘hofstijl’. Omdat normale burgers niks met de ‘hoffelijke’ dingen te maken hadden, werd de rococo-stijl nooit in de huizen van gewone burgers aangetroffen. Alleen al om het feit dat gewone burgers dit nooit konden betalen.
+                    <br><br>
+                    Heel typerend voor de rococo is het samengaan van architectuur, schilderkunst, beeldhouwkunst en binnenhuisarchitectuur. Dit wordt voornamelijk zichtbaar in de rococo-interieurs, die voorzien zijn van speelse en slingerende ornamenten.<br>
+                    De nadruk ligt op het lieflijke en luchtige karakter. Bij rococo werden vaak zachte pastelkleuren gebruikt. Ook rocaille-motieven (schelpachtige versieringen) werden vaak gebruikt als versiering.
+                    </p>
+                </div>
+                <br>
+                <periode><h1>De Nieuwste Tijd</h1></periode>
+                <div id="classicisme">
+                <h2>Classicisme</h2>
+                    <!--BRON: http://kunst-19e-eeuw.blogspot.be/p/neoclassicisme.html-->
+                    <p>Het woord classicisme of neoclassicisme wordt gebruikt voor de 18e en 19e eeuwse kunst die door de klassieke cultuur werd geïnspireerd. Men had genoeg van de bombastische dramatiek van de Barok en de uitbundige decoratie van de Rococo. <br>Men vond deze stijlen nu decadent, en teveel deel van de kerk en de aristocratie waar men steeds kritischer tegenover stond. Als reactie  keerde men terug naar strenge, heldere en zuivere vormen. In tegenstelling tot de renaissance volgde het classicisme de klassieken niet alleen naar de geest, maar ook naar de letter. Het classicisme voelde niets voor de vrijheid waarmee de Renaissance, de Barok en de Rococo nieuwe vormen had gegeven aan de Griekse en Romeinse kunst.<br><br>
+                    Voor de schilderkunst waren er tijdens de neoclassicistische periode geen kant-en-klare voorbeelden beschikbaar. De bouwkunst of beeldhouwkunst kon teruggrijpen op de resten uit de klassieke oudheid die architecten en beeldhouwers bestudeerden op hun reizen naar Rome. De schilderkunst had vrijwel alleen de Renaissance als bron en het werk van Poussin uit de Barok.<br><br>
+                    Aanvankelijk kozen veel schilders nog Griekse en Romeinse gebouwen en ruïnes als onderwerp, die werden nuchter en zakelijk bestudeerd. Men registreerde wat men zag. Daarna koos men vooral klassieke verhalen als voorstelling, waarin parallellen werden getrokken met de eigen tijd. Taferelen uit de Romeinse geschiedenis vergeleek men met de eigen politieke situatie. De symbolische betekenis van die klassieke verhalen waarin thema's als zelfopoffering en vaderlandsliefde werden verbeeld, was voor velen herkenbaar in de aanloop naar de Revolutie van 1789.
+                    <br><br>
+                    In de schilderkunst kwam veel aandacht voor lijn en tekening. Kleurgebruik en compositie dienden als ondersteuning van de voorstelling. Men koos voor 
+                        <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                            <img src="..//resources/images/timeline/15%20-%20clas.jpg">
+                            <bijschrift>klik om te vergroten</bijschrift>     
+                        </afbeelding>
+                        <tekst>heldere kleuren en eenvoudige composities</tekst>
+                    </a> 
+                         om de aandacht niet af te leiden van de betekenis van het onderwerp.
+                    Deze werkwijze sloot goed aan op de geest van de tijd: het rationalisme van de Verlichting met de nadruk op verstand en kennis, had weinig behoefte aan een artistieke interpretatie.
+                    <br><br>
+                    Kunstenaars hadden maar één ambitie: toelating tot de Salon, de belangrijkste grote expositie van eigentijdse beeldende kunst. In de laatste decennia van de negentiende eeuw groeide deze jurytentoonstelling uit tot een massaal evenement dat in 1880 met ruim 7000 werken zijn hoogtepunt bereikte. 
+                    <br><br>
+                    De neoclassicistische stijl werd in Frankrijk, en vervolgens in een groot deel van Europa, de officiële stijl die aan de kunstacademies werd onderwezen. Het ontwikkelen van een perfecte technische tekenvaardigheid, kennis van de menselijke anatomie, proportieleer, perspectief, licht- en schaduwwerking vormde voortaan de basis van de opleiding van schilders en beeldhouwers.<br>
+                    Er werd veel nadruk gelegd op de techniek. De schilderijen waren tekenachtig van opzet, de mensfiguren op de schilderijen perfect van vorm. De composities zijn eenvoudig en streng. Figuren werden in een sterk bestudeerde houding weergegeven, de omgeving koel en zakelijk, alles in een tekenachtige werkwijze met duidelijke contouren. Er werd kundig met lichtval gewerkt. Door de verstandelijke benadering en de weloverwogen compositie maken neoclassicistische schilderijen vaak een statische, toneelmatige indruk.</p>
+                </div>
+                <br>
+                <div id="romantiek">
+                <h2>Romantiek</h2>
+                    <!--BRON: http://kunst-19e-eeuw.blogspot.be/p/romantiek.html-->
+                    <p>De Romantiek begon als een literaire beweging in Duitsland, Engeland en Frankrijk. Aan het eind van de achttiende eeuw (de eeuw van de Rede) kreeg men genoeg van de rationalistische manier van denken van de Verlichting en het academisch classicisme, waarin men voortdurend de oude klassieken probeerde te imiteren. De kunstenaar was in de Romantiek niet langer een nabootser van klassieke kunst, maar werd zelf een schepper. Hij werkte vanuit het persoonlijke gevoel. Kunst werd de 'individuele expressie van individuele emotie'.
+                    <br><br>
+                    In deze 19e-eeuwse levenshouding was de ervaring van het individu uitgangspunt. Vanuit een negatieve kijk op de eigen tijd met industrie, rationalisme en materialisme werd er idealiserend naar het verleden gekeken. Dit gevoel werd hoger aangeslagen dan gezond verstand, want de romanticus leefde in onvrede met de maatschappij: hij 'vluchtte' uit het hier en nu naar andere culturen, naar het verleden, 
+                        <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                            <img src="..//resources/images/timeline/16%20-%20romantiek.jpg">
+                            <bijschrift>klik om te vergroten</bijschrift>     
+                        </afbeelding>
+                        <tekst>in sprookjes of in de natuur.</tekst>
+                    </a> 
+                         Met weemoed verlangde men naar terug naar de Middeleeuwen, vanuit het idee dat het leven toen nog puur en zuiver was. Typische kenmerken van de Romantiek zijn: </p><br>
+                    <ul>
+                        <li>
+                        <h3>Emotionaliteit</h3>
+                            <p>Tijdens de Romantiek werd de overwaardering van de rationele zijde van de mens die de eeuw ervoor had gekenmerkt stevig op de korrel genomen. Men beschouwde het rationalisme van de 18e eeuw nu als een vernauwing van het bewustzijn. Romantici keerden zich tegen de koele onverschillige objectiviteit van rationalistische denkers en de wetenschap. Men verzet zich tegen de overheersing van wetenschap en technologie. Zo werd Isaac Newton wel eens bestempeld als de 'vleesgeworden duivel' door William Blake.
+                            <br>
+                            Daartegenover stelde men het gevoel, de fantasie, de verbeelding, de intuïtie, het onderbewuste, het onverklaarbare en het raadselachtige. Deze intense emotionaliteit en verlangen naar het onverklaarbare en de fantasie leidde ook tot een grote hoeveelheid zelfmoorden. Dit wordt wel de Zwarte Romantiek genoemd. Goethe's Die Leiden des jungen Werthers, dat eindigt met de zelfmoord van de hoofdpersoon, is hiervan het beste voorbeeld.</p>
+                        </li><br>
+                        <li>
+                        <h3>Geschiedenis</h3>
+                            <p>Romantici vonden zich niet in de vooruitgangsgedachte, maar waren bezorgd voor de toekomst en nostalgisch naar het verleden. Voor sommigen geldt de romantiek daarom als een laatste traditionele reactie tegen de vooruitgang. Tegenover de tijdloze rede van de verlichting stelt de romantiek het historische bewustzijn, de Zeitgeist: de wereld ontwikkelt zich niet volgens een goddelijk heilsplan waarvan de uitkomst vaststaat, maar door individuen met een onbekend einde. Deze opvatting leidde tot het concept De Geschiedenis. Geschiedschrijving werd hierdoor meer dan het noteren van gebeurtenissen. Er moest een verhaal worden ontdekt.</p>
+                        </li><br>
+                        <li>
+                        <h3>Natuur</h3>
+                            <p>De romanticus had een zekere afkeer van de (zich ontwikkelende) industrie, de techniek en de steden. Plekken die nog niet door de menselijke ratio waren bezoedeld kregen de eretitel natuur. In de Romantiek nam de verheerlijking van de natuur bijna religieuze vormen aan. Romantici ontwikkelden een bijzondere waardering voor wildernis omdat zij veronderstelden dat daarin de meest authentieke, pure vorm van natuur te vinden is. Daarnaast ging men uit van een eenheid van mens en natuur.
+                            <br>
+                            De aantrekkingskracht van het mysterieuze, de duisternis en de mystiek van leven en dood werd groter. Hierdoor ontstond het idee dat bomen als sparren, cipressen en treurige boomsoorten als wilgen symbolisch de droefheid uitbeeldden. Naast de taxus, het symbool van de onvergankelijkheid, zijn op begraafplaatsen uit deze tijd veel van deze bomen te vinden.</p>
+                        </li><br>
+                        <li>
+                        <h3>Liefde en vriendschap</h3>
+                            <p>Vriendschap was volgens de romantische levenshouding de belangrijkste vorm van loyaliteit die een mens kende. Vrienden kiest men immers op grond van hun aard. In samenspraak met gelijkgestemde vrienden kan de eigen grillige identiteit nog beter worden onderzocht. Ook de romantische liefde kenmerkt zich door een grote aandacht voor de karakters van de beide geliefden. Voorheen werd partnerkeuze vooral bepaald door maatschappelijke overwegingen. Deze vrijheid leidde ook tot de vrijheid om een ander af te wijzen.</p>
+                        </li><br>
+                        <li>
+                        <h3>Decadentie</h3>
+                            <p>De romanticus probeert zijn subjectieve gevoelswereld zo authentiek mogelijk tot uiting te brengen in de objectieve wereld. Dit houdt, volgens de Kantiaanse vaststelling dat het subjectieve en het objectieve van onvergelijkbare aard zijn, een onmogelijkheid in. Het erkennen van deze onmogelijkheid om authentiek te leven heeft onder romantici geleid tot afwijzing van het maatschappelijk leven in de vorm van ironie, verbittering, hedonisme of decadentie.</p>
+                        </li><br>
+                        <li>
+                        <h3>Het eigene</h3>
+                            <p>Waar de verlichting ervan was uitgegaan dat verschillen tussen individuen en volken geleidelijk zouden verdwijnen, omdat verschillen van inzicht in principe langs rationele weg op te lossen zijn, benadrukte en waardeerde de romantiek het eigene en onderscheidende van individuen en groepen. Elk volk heeft een unieke cultuur en is bijzonder. <br>Elke samenleving, elke natie kent bepaalde karakteristieke cultuuruitingen die samenhangen met haar verleden. Een volk is dus een samenhangende gemeenschap en moet dan ook autonoom zijn en blijven. Regionale gebruiken worden gekoesterd, bestaande culturen moeten behouden blijven. Het 19e-eeuwse nationalisme, dat de nog vaak tamelijk feodale monarchieën ging ondermijnen, ligt duidelijk in het verlengde hiervan.</p>
+                        </li><br>
+                    </ul>
+                </div>
+                <br>
+                <div id="realisme">
+                <h2>Realisme</h2>
+                    <!--BRON: https://nl.wikipedia.org/wiki/Realisme_(kunststroming)-->
+                    <p>Halverwege de 19e eeuw rees er bij diverse schilders verzet tegen de afstandelijke stijl van het classicisme en de overdreven stijl van de romantiek. Het realisme beeldde alledaagse gebeurtenissen af, een groet of 
+                        <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                            <img src="..//resources/images/timeline/17%20-%20realisme.jpg">
+                            <bijschrift>klik om te vergroten</bijschrift>     
+                        </afbeelding>
+                        <tekst>gewone arbeiders aan het werk op het land.</tekst>
+                    </a> 
+                         De manier van schilderen was vergelijkbaar met die van de romantiek: veel aardetinten en realistische verhoudingen en kleuren. <br>Voor het eerst werd gezocht naar de ongeïdealiseerde werkelijkheid, dit uitte zich in het afbeelden van bezwete geharde havenarbeiders, maar ook in het afbeelden van schaam- en okselhaar in naakten. Dit riep veel weerstand op, critici vonden dat de realisten zich te veel richten op datgene wat lelijk was. Realisten zagen zichzelf meer als journalisten, maar koesterden ook zeker een romantisch verlangen naar de ongeindustrialiseerde werkelijkheid. Gustave Courbet was de oprichter, belangrijkste schilder en woordvoerder van het realisme.</p>
+                </div>
+                <br>
+                <div id="impressionisme">
+                <h2>Impressionisme</h2>
+                    <p>Het impressionisme is een kunststroming, ontstaan vanuit de schilderkunst. De beweging had haar bakermat in Frankrijk, in de tweede helft van de negentiende eeuw. Aanvankelijk ontstond ze als een revolterende beweging tegenover de toen algemeen aanvaarde en officieel door de staat erkende classicistische academische kunst. Uiteindelijk ontwikkelde het zich tot een totaal nieuwe stijltechnische conceptie die aan de wieg stond van het modernisme uit de twintigste eeuw. <br>Typerende aspecten van het impressionisme zijn de gerichtheid op de beleving van het moment ('impressie'),  
+                        <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                            <img src="..//resources/images/timeline/18%20-%20impres.jpg">
+                            <bijschrift>klik om te vergroten</bijschrift>     
+                        </afbeelding>
+                        <tekst>lichteffecten en kleur</tekst>
+                    </a> 
+                        , de keuze voor thema's uit het 'moderne leven', de bijzondere aandacht voor 
+                        , een schetsachtige werkwijze en het werken in de openlucht.</p>
+                </div>
+                <br>
+                <div id="postimpressionisme">
+                <h2>Postimpressionisme</h2>
+                    <!--BRON: http://kunst-19e-eeuw.blogspot.be/p/postimpressionisme.html-->
+                    <p>Het begrip postimpressionisme verwijst naar het werk van kunstenaars die eind 19e eeuw de nieuwe avant-garde vormden. Na de nieuwe beeldtaal van de impressionisten experimenteerden zij met vorm, lijn, kleur en technieken om meer expressie of een nieuwe inhoud van hun kunst te verbeelden.<br><br>
+                    Van Gogh, Gauguin en Cézanne legden de basis voor nieuwe richtingen in de schilderkunst. Zij reageerden op de oppervlakkige inhoud van het impressionisme, want daarbij had men vooral aandacht voor het visuele. Deze postimpressionisten hadden meer belangstelling voor de vorm en inhoud, maar zij bouwden wel voort op het kleurgebruik van de impressionisten. Deze schilders werden daarnaast beïnvloed door Japanse en Afrikaanse kunst.<br><br>
+                    Kenmerken van het postimpressionisme richten zich doorheen alle verscheidenheid grosso modo op het overbrengen van 
+                        <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                            <img src="..//resources/images/timeline/19%20-%20postimpres.jpg">
+                            <bijschrift>klik om te vergroten</bijschrift>     
+                        </afbeelding>
+                        <tekst>emotie, op structuur, compositie en op symbolistische betekenissen.</tekst>
+                    </a> 
+                         Het postimpressionisme wil vooral verder gaan dan alleen weergeven wat kan worden waargenomen. De werkelijkheid wordt min of meer vervormd en doel is vooral om meer gevoel in het schilderij te leggen. Wat wordt waargenomen, wordt geordend en subjectief vormgegeven, hetgeen ook wel abstrahering en herstructurering wordt genoemd. <br>Verschillende dikten en verschillende richtingen van toetsen zorgen vaak voor veel dynamiek in de schilderijen. Ook wordt veel gebruikgemaakt van complementaire kleurcontrasten. De combinatie van warm en koud zorgt dan voor diepte in het schilderij.</p>
+                </div>
+                <br>
+                <periode><h1>Eigen Tijd</h1></periode>
+                <div id="kubisme">
+                <h2>Kubisme</h2>
+                    <!--BRON: https://nl.wikipedia.org/wiki/Schilderkunst_van_de_20e_eeuw-->
+                    <p>Het kubisme ontstond in Frankrijk, rond 1907, met als bekendste kunstenaar Pablo Picasso. De kubisten lieten de realistische vormen los, maar schilderden in eerste instantie in gedekte, somber aandoende kleuren, die nog uit het einde van de 19e eeuw schijnen te stammen. De kubisten zetten hun onderwerpen over in 
+                        <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                            <img src="..//resources/images/timeline/20%20-%20kubisme.jpg">
+                            <bijschrift>klik om te vergroten</bijschrift>     
+                        </afbeelding>
+                        <tekst>geometrische vormen</tekst>
+                    </a> 
+                        , zoals kubussen, cirkels en kegels. De stroming zou bestaan tot ongeveer 1920. De onderwerpen zijn wel realistisch, al moet men soms goed kijken om dit in het totaalbeeld terug te vinden.</p>
+                </div>
+                <br>
+                <div id="expressionisme">
+                <h2>Expressionisme</h2>
+                    <!--BRON: https://nl.wikipedia.org/wiki/Schilderkunst_van_de_20e_eeuw-->
+                    <p>Vlak voor de Eerste Wereldoorlog kwam rond 1911 in Duitsland het expressionisme op. In deze kunst werden de realistische kleuren losgelaten, en streefde de kunstenaar er vooral naar 
+                        <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                            <img src="..//resources/images/timeline/21%20-%20expres.jpg">
+                            <bijschrift>klik om te vergroten</bijschrift>     
+                        </afbeelding>
+                        <tekst>het innerlijk gevoel tot uitdrukking te laten komen.</tekst>
+                    </a> 
+                         De beelden zijn van dieren, landschappen of mensen in hun dagelijkse doen of laten. Deze stroming is nog steeds in leven, er zijn ook aan het begin van de 21ste eeuw kunstenaars die zich expressionistisch noemen. Vincent van Gogh, hoewel levend in de 19e eeuw, wordt als een vroege expressionist gezien. <br>Een andere belangrijke voorloper van het expressionisme was het fauvisme met als belangrijkste exponent Henri Matisse, maar ook de in Frankrijk werkende Kees van Dongen. Deze kunstenaars lieten ook de realistische kleuren los, maar zochten niet naar de uitdrukking van hun gevoel; zij zochten eerder naar de volledige vrijheid en lieten daarbij ook de regels van de perspectief volledig los.</p>
+                </div>
+                <br>
+                <div id="surrealisme">
+                <h2>Surrealisme</h2>
+                    <!--BRON: http://www.kunstbus.nl/kunst/surrealisme.html-->
+                    <p>Het Surrealisme is ontleend aan het onderzoek naar het onderbewuste en de dromenanalyse door Sigmund Freud (1856-1939). De surrealisten geven beelden en of woorden weer van symbolische of gedeformeerde voorstellingen. Dit zijn meestal herkenbare vormen welke met elkaar geen of weinig verband houden en afstammen uit de wereld van dromen, illusies en fantasieën. De wetten van perspectief en zwaartekracht gelden niet of nauwelijks meer, of worden daarentegen juist versterkt. Surrealistische kunstwerken stimuleren de fantasie zodanig dat de kijker een geheel eigen interpretatie van het kunstwerk opbouwt.
+                    <br><br>
+                    Surrealistische kunstenaars schrikken er niet voor terug om alle mogelijk materialen te gebruiken en hiermee te experimenteren. Daarbij worden vaak de 
+                        <a onclick="vergroot1(this)">
+                                <afbeelding onclick="vergroot2(this)">
+                            <img src="..//resources/images/timeline/22%20-%20surrealisme.jpg">
+                            <bijschrift>klik om te vergroten</bijschrift>     
+                        </afbeelding>
+                        <tekst>grenzen tussen werkelijkheid en fantasie overschreden.</tekst>
+                    </a> 
+                        grenzen tussen werkelijkheid en fantasie overschreden. Bestaande voorwerpen kunnen plotseling getransformeerd worden tot surrealistische kunst door ze in een geheel andere context te plaatsen.</p>
+                </div>
+            </div>
+        </main>
+        <div class="footer">
+            <h6>&copy; 30seconds 2016</h6>
+        </div>
+    </body>
+</html>

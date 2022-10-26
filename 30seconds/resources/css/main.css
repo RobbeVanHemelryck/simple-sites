@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+main{
+    height: auto;
+    position: relative;
+    top: 65px;
+    z-index: 0;
+}
+
+.footer{
+    height: 65px;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 0px -4px 7px black;
+    text-align: center;
+    position: relative;
+    top: 65px;
+    clear: both;
+}
+    
+h6{
+     font-size: 21px;
+     position: relative;
+     top: 20px;
+     font-weight: normal;
+}
+
+@media screen and (max-width: 750px){
+    
+main{
+    width: 100vw;
+    }    
+    
+.menu{
+    width: 100%;
+    height: 65px;
+    box-shadow: 0px 4px 7px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+.hamburger{
+    background-image: url("../../resources/images/hamburger.png");
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    float: right;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    z-index: 2;
+}
+
+.close{
+    background-image: url("../../resources/images/close.png");
+}
+
+.links{
+    width: 100%;
+    height: 185px;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: -185px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1;
+}
+
+.open{
+    top: 65px;
+}
+.logo{
+    background-image: url("../../resources/images/logo.png");
+    height: 45px;
+    width: 200px;
+    background-size: cover;
+    margin-top: 10px;
+    margin-left:auto;
+    margin-right: auto;
+    z-index: 2;
+}
+.links ul{
+    width: 100%;
+    height: auto;
+    list-style: none;
+}
+
+.links li{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.links li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+.links li a:hover{
+    text-decoration: underline overline;
+    color: lightgray;
+}
+
+}
+@media screen and (min-width: 751px){
+
+main{
+    width: 80vw;
+    margin: 0 auto;
+}    
+    
+.menu{
+    width: 100%;
+    height: 65px;
+    box-shadow: 0px 4px 7px;
+    background-color: white;
+    position: fixed;
+    top: 0vh;
+    z-index: 1;
+}
+    
+.logo{
+    background-image: url("../../resources/images/logo.png");
+    height: 45px;
+    width: 200px;
+    background-size: cover;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+    
+.links ul {
+    position: fixed;
+    top: 22px;
+    list-style: none;
+    right: 25px;
+    z-index: 1;
+}
+
+.links li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    background-color: transparent;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.links a {
+    text-decoration: none;
+    color: Black;
+}
+
+.links a:hover{
+    text-decoration:  underline;
+    text-decoration-color: darkgoldenrod;
+}
+
+}

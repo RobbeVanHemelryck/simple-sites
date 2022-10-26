@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="examen.css">
+    <script src="examen.js"></script>
+    <title>EXAMEN 2.0</title>
+</head>
+<body>
+    <titel>Pacific Trails Resort</titel>
+    <img id="sunset" src="sunset.jpg">
+    <nav>
+        <a class="hometekst" href="index.html">Home</a> <br>
+        <a class="hometekst" href="yurts.html">Yurts</a> <br>
+        <a class="hometekst" href="activities.html">Flatley</a> <br>
+        <a class="hometekst" href="reservations.html">Reservations</a> <br>
+    </nav>
+    <section>
+    <h1>Reservations at Pacific Flatley</h1>
+    <vet>Contact Us</vet>
+    <p>Required information is marked with an asterisk (*)</p>
+    <form id="form">
+        <p>*First Name:  <input name="first name" class="input" id="FirstName" type="text" value=""></p>
+        <p>*Last Name:  <input name="last name" class="input" id="LastName" type="text"></p>
+        <p>*e-mail:  <input name="e-mail address" class="input" id="email" type="text"></p>
+        <p>Phone:  <input class="input" id="phone" type="text"></p> 
+        <p>Arrival Date:  <input class="input" id="date" type="text" value="dd/mm/jjjj" onfocus="valueWeg(this)" onblur="valueTerug(this)"></p>
+        <p>Nights:  <input class="input" id="nights" type="text"></p>
+        <p>*Comments:  <textarea name="opinion" class="input" id="comments"></textarea></p><br>
+        <input type="button" onclick="verzend()" value="Verzenden">
+    </form>
+    </section>
+    <footer>Copyright © 2014 Pacific Trails Resort<br>
+    <a href="mailto: mickey-moustache@hotmail.com">mickey-moustache@hotmail.com</a>
+    </footer>
+</body>
+</html>

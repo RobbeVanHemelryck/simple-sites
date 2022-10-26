@@ -1,0 +1,101 @@
+h1{
+    color: #3399CC;
+    font-size: 25px;
+}
+titel{
+    color: white;
+    padding-left: 25px;
+    padding-top: 15px;
+    background-color: #000033;
+    position: absolute;
+    height: 57px;
+    font-size: 32px;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+}
+nav{
+    position: absolute;
+    top: 72px;
+    left: 0px;
+    width: 170px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: comic sans MS;
+    background-color: #90C7E3;
+    color: #000033;
+    height: 100vh;
+    padding-left: 25px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.hometekst{
+    text-decoration: none;
+}
+section{
+    position: absolute;
+    padding-top: 5px;
+    top: 72px;
+    left: 215px;
+}
+#coast{
+    margin-right: 20px;
+    float: left;
+}
+vet{
+    font-size: 20px;
+    font-weight: bold;
+}
+li{
+    list-style-position: inside;
+    color: black;
+    font-size: 15px;
+    font-family: arial;
+}
+p{
+    color: black;
+    font-size: 15px;
+    font-family: arial;
+}
+#sunset{
+    position: absolute;
+    right:0px;
+    top: 0px;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    font-size: 12px;
+    font-family: cursive;
+    width: 100vw;
+    background-color: #90C7E3;
+}
+table{
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 100px;
+    height; 50p^x;
+}
+td{
+    text-align: center;
+}
+tr:nth-child(even){
+   background-color: grey; 
+}
+.flatley PFF{
+    position: absolute; 
+    top: 430px;
+    left:0px;
+    visibility: hidden;
+}
+.flatley:hover PFF{
+    visibility: visible;
+}
+.input{
+    position: absolute;
+    left: 150px;
+}

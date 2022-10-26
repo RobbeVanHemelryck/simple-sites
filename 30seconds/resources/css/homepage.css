@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(white, lightgray);
+    background-attachment: fixed;
+    font-family: "Montserrat";
+}
+
+.wrapper{
+    width: 60vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+.container{
+    width: 60vw;
+    height: 47vw;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px gray;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text-container{
+    width: 60vw;
+    height: 8vw;
+    text-align: center;
+    margin-bottom: 3vw;
+}
+
+h1{
+    font-size: 6vw;
+    color: darkgrey;
+    padding-top: 1vw;
+    text-shadow: 3px 3px 1px lightgray;
+}
+
+h2{
+    font-size: 2vw;
+    color: darkgray;
+}
+
+h3{
+    font-family: "Montserrat";
+    font-size: 8vw;
+    opacity: 0.8;
+    padding-top: 3vw;
+} 
+
+h4{
+    font-family: "Montserrat";
+    font-size: 2vw;
+    opacity: 0.8;
+    padding-top: 6vw;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+    
+.gallery{
+    width: 50vw;
+    height: 16vw;
+    background-image: url("../images/home/1872_impression-m.jpg");
+    background-size: cover;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px gray;
+    text-align: center;
+    }
+
+.artists{
+    width: 16vw;
+    height: 16vw;
+    background-image: url("../images/home/1623_zelfportret-r.jpg");
+    background-size: cover;
+    float: left;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+    box-shadow: 0px 0px 20px gray;
+}
+
+.timeline{
+    width: 16vw;
+    height: 16vw;
+    background-image: url("../images/home/1889_starrynight-vg.jpg");
+    background-size: cover;
+    float: left;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+    box-shadow: 0px 0px 20px gray;
+}
+
+.contact{
+    width: 16vw;
+    height: 16vw;
+    background-image: url("../images/home/1503_monalisa-dv.jpg");
+    background-size: cover;
+    float: left;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+    box-shadow: 0px 0px 20px gray;
+}
+
+.right{
+    margin-right: 1vw;
+}
+
+#smalltiles{
+    width: 50vw;
+    height: 17vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container{
+        width: 90vw;
+        height: 70.5vw;
+        background-color: antiquewhite;
+        margin: 0 auto;
+        box-shadow: 0px 0px 20px gray;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5%;
+    }
+    
+    .text-container{
+        width: 90vw;
+        height: auto;
+    }
+    
+    h1{
+        font-size: 8vw;
+    }
+    
+    h2{
+        font-size: 3.5vw;
+    }
+    .artists, .timeline, .contact{
+        width: 24vw;
+        height: 24vw;
+        margin-top: 1.5vw;
+        margin-bottom: 4.5vw;
+    }
+    .right{
+        margin-right:1.5vw;
+    }
+    .gallery{
+        width: 75vw;
+        height: 24vw;
+    }
+    #smalltiles{
+        width: 75vw;
+        height: 24vh;
+        margin: 0 auto;
+    }  
+
+h3{
+    font-family: "Montserrat";
+    font-size: 12vw;
+    padding: 0;
+    padding-top: 5vw;
+} 
+    
+h4{
+    font-family: "Montserrat";
+    font-size: 4vw;
+    opacity: 0.8;
+    padding-top: 9vw;
+}
+    
+}

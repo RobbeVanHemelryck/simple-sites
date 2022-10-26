@@ -1,0 +1,164 @@
+#zoeksrc{
+    width: 40vw;
+    height: 15vw;
+    overflow-y: scroll;
+}
+#tezoeken{
+    width: 40vw;
+    height: 8vw;
+}
+gevonden{
+    color: red;
+}
+#groen{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 15vw;
+    z-index: -1;
+}
+#robertoswag{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 20vw;
+    z-index: -1
+}
+#logo{
+    position:absolute;
+    left: 20px;
+    top: 20px;
+    width: 20vw;
+    transition: width 0.3s ease-in-out 0s;
+}
+#logo:hover{
+    width: 22vw;
+}
+body{
+    background-color: #58aefe;
+}
+#wrapper{
+    width: 50vw;
+    height: 300vh;;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    background-color: white;
+}
+#wrapper p{
+    margin:0;
+    padding:0;
+    font-family: arial;
+    line-height: 22px;
+    text-align: justify;
+}
+#result{
+    width: 35vw;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #DBDBDB;
+    padding: 15px;
+}
+result{
+    font-family: "tahoma";
+    font-size: 1.6vw;
+    display:block;
+    text-align: center;
+}
+
+
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+li{
+    margin: 0;
+    padding:0;
+    list-style-type: none;
+}
+.vsmcas{
+    float: left;
+    position: relative;
+
+}
+#projecten, #games{
+    display:block;
+    background-color: #87CFFF;
+    padding: 20px 0px 20px 0px;
+    width: 15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 17px;
+    text-align: center;
+    font-family: arial;
+    font-weight: 600;
+    color: #34768C;
+    transition: background 0.2s linear 0s, color 0.1s linear 0s;
+}
+#school{
+    display:block;
+    background-color: #87CFFF;
+    padding: 30px 0px 30px 0px;
+    width: 15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: center;
+    font-family: arial;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: #34768C;
+    transition: background 0.2s linear 0s, color 0.1s linear 0s;
+}
+#nav ul ul li{
+    float: none;
+}
+#nav ul li ul{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3 linear 0s;
+}
+#nav ul li:hover ul{
+    display:block;
+    opacity: 1;
+}
+#nav ul li ul li a{
+    display:block;
+    background-color: #74AED4;
+    padding: 10px 0px 10px 0px;
+    width: 15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: center;
+    font-family: arial;
+    color: #255270;
+    border-bottom: 1px solid #006080;
+    transition: background 0.1s linear 0s, color 0.1s linear 0s;
+}
+#nav{
+    position: absolute;
+    left: 50%;
+    width: 51vw;
+    margin-left: -25.5vw;
+    top: 20px;
+}
+#nav ul li:hover .alfa{
+    color: white;
+    background-color: #74AED4;
+    border-bottom: 1px solid #006080;
+}
+
+#nav ul li ul li a:hover{
+    background-color: #A2C6DE;
+    color: white;
+    border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
+}

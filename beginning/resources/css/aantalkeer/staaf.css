@@ -1,0 +1,63 @@
+.paragraafNaam{
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    display: block;
+    width: 40vw;
+    text-align: center;
+    font-family: tahoma;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 25px 0px 25px;
+    clear:both;
+}
+.geheel{
+    width: 15vw;
+    float: left;
+    margin: 10px;
+}
+.grafiekCont{
+    display: table-cell;
+    width: 15vw;
+    height: 15vw;
+    position: relative;
+    background-color: #EDEDED;
+    border-top: 3px solid #BABABA;
+    border-left: 3px solid #BABABA;
+    border-right: 3px solid #BABABA;;
+}
+.grafiek{
+    width: 6vw;
+    height: 0%;
+    position: absolute;
+    bottom:0px;
+    margin-left: -3vw;
+    left: 50%;
+    background-color: #CC0000;
+    transition: all 0.5s ease-in-out 1s;
+}
+.grafiek .aantal{
+    position: absolute;
+    width: 6vw;
+    left: 50%;
+    margin-left: -3vw;
+    font-size: 1.5vw;
+    font-family: tahoma;
+    color: white;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 0.5s ease-in 1.5s;
+}
+.zoekterm{
+    text-align: center;
+    background-color: #FF4545;
+    color: white;
+    font-size: 1.5vw;
+    padding: 5px 5px;
+    font-family: tahoma;
+    opacity: 0;
+    border-bottom: 3px solid #BABABA;
+    border-left: 3px solid #BABABA;
+    border-right: 3px solid #BABABA;
+    transition: all 0.2s ease-in 0.5s;
+}

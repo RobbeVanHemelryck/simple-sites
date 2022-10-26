@@ -1,0 +1,266 @@
+#groen{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 15vw;
+    z-index: -1;
+}
+#robertoswag{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 20vw;
+    z-index: -1
+}
+#logo{
+    position:absolute;
+    left: 20px;
+    top: 20px;
+    width: 20vw;
+    transition: width 0.3s ease-in-out 0s;
+}
+#logo:hover{
+    width: 22vw;
+}
+body{
+    background-color: #58aefe;
+    overflow: visible;
+}
+#wrapper{
+    width: 50vw;
+    height: 200vh;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    background-color: white;
+}
+.tags{
+    display: none;
+}
+#search{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    height: 30px;
+    font-size: 1.4vw;
+    border-style: none;
+    border-bottom: 3px solid white;
+    background-color: #EBEBEB;
+    padding: 3px0px 3px 0px;
+    color: #B5B5B5;
+}
+#images{
+    width: 44vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content{
+    width: 20vw;
+}
+/*#search:hover{
+    border-bottom: 3px solid #BABABA;
+}*/
+.volImg{
+    display: block;
+    width: 20vw;
+    float: left;
+    margin: 1vw;
+    background-color: #C2E2ED;
+    -webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+.volImg:hover .content{
+    -webkit-filter: grayscale(70%);
+}
+.volImg:hover{
+    background-color: #47A4C4;
+    color: white;
+}
+.naam{
+    margin: 0;
+    text-align: center;
+    font-size: 1.3vw;
+    font-family: arial;
+}
+.artiest{
+    margin: 0;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1vw;
+    font-family: Trebuchet MS;
+}
+.overlay{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.overlaycontent{
+    position: relative;
+    width: 50vw;
+    height: 40vw;
+    top: 50%; left: 50%;
+    padding-top: 1.3vw;
+    transform: translate(-50%,-50%);
+    background-color: #F2F2F2;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.overlaycontent h4{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: Trebuchet MS;
+    color: #141414;
+}
+.overlaycontent h5{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 3vw;
+    font-family: Trebuchet MS;
+    color: #141414;
+}
+.overlaycontent p{
+    text-align: justify;
+    font-size: 1.3vw;
+    font-family: Tahoma;
+    padding: 0px 25px 25px 25px;
+}
+#fullSupper{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    margin-top: 15px;
+}
+#fullSaturn{
+    width: 17vw;
+    float: left;
+    margin: 1vw;
+}
+#fullScream{
+    width: 23vw;
+    float: left;
+    margin: 25px 25px 0px 25px;
+}
+#fullMona{
+    width: 20vw;
+    float: left;
+    margin: 25px 25px 0px 25px;
+}
+.clearfloat{
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+li{
+    margin: 0;
+    padding:0;
+    list-style-type: none;
+}
+.vsmcas{
+    float: left;
+    position: relative;
+
+}
+#projecten, #games{
+    display:block;
+    background-color: #87CFFF;
+    padding: 20px 0px 20px 0px;
+    width: 15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 17px;
+    text-align: center;
+    font-family: arial;
+    font-weight: 600;
+    color: #34768C;
+    transition: background 0.2s linear 0s, color 0.1s linear 0s;
+}
+#school{
+    display:block;
+    background-color: #87CFFF;
+    padding: 30px 0px 30px 0px;
+    width: 15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: center;
+    font-family: arial;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: #34768C;
+    transition: background 0.2s linear 0s, color 0.1s linear 0s;
+}
+#nav ul ul li{
+    float: none;
+}
+#nav ul li ul{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3 linear 0s;
+}
+#nav ul li:hover ul{
+    display:block;
+    opacity: 1;
+}
+#nav ul li ul li a{
+    display:block;
+    background-color: #74AED4;
+    padding: 10px 0px 10px 0px;
+    width: 15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: center;
+    font-family: arial;
+    color: #255270;
+    border-bottom: 1px solid #006080;
+    transition: background 0.1s linear 0s, color 0.1s linear 0s;
+}
+#nav{
+    position: absolute;
+    left: 50%;
+    width: 51vw;
+    margin-left: -25.5vw;
+    top: 20px;
+}
+#nav ul li:hover .alfa{
+    color: white;
+    background-color: #74AED4;
+    border-bottom: 1px solid #006080;
+}
+#nav ul li ul li a:hover{
+    background-color: #A2C6DE;
+    color: white;
+    border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
+}
